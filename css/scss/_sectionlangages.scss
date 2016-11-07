@@ -1,0 +1,95 @@
+#couleur-langage{
+  background-color: $couleurBackground;
+  padding-bottom: 45px;
+  margin-top: -20px;
+
+
+  header{
+    border-bottom: 3px solid $couleurPrincipale;
+    margin-bottom: 25px;
+    margin-right: 20%;
+    margin-left: 20%;
+    h2{
+      text-align: center;
+      padding-bottom: 15px;
+      padding-top: 25px;
+      font-size: 2.5em;
+      font-family: $fontTitle;
+      text-transform: uppercase;
+      margin-left: 20px;
+      font-family:$fontTexte;
+     }
+    }
+    #textlang{
+      text-align: justify;
+      font-size: $tailleArticle;
+      width: 90%;
+      margin: auto;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+
+      h3{
+        text-align: center;
+        padding-bottom: 40px;
+        color: $couleurTexte;
+        font-family: $fontTexte;
+      }
+    }
+    article > h3{
+      font-size: $tailleTitre;
+    }
+  }
+
+.langages{
+  padding-top: 40px;
+  width: 50%;
+  border-right: 2px solid $couleurSecondaire;
+  margin-top: 40px;
+}
+
+div.groupe1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:150px;
+    margin:auto;
+    img{
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.outils{
+  width: 50%;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+
+.framework {
+  border-right: 2px solid $couleurSecondaire;
+}
+
+@media (max-width:768px){
+  #couleur-langage div {
+    display: flex;
+    flex-direction: column;
+}
+#couleur-langage div .groupe1{
+  display: block;
+}
+
+.langages{
+  width: 100%;
+}
+
+.outils{
+  width: 100%;
+}
+
+.framework {
+  width: 100%
+}
+}

@@ -1,0 +1,52 @@
+.partenaire{
+ text-align: center // alignement des textes de la div partenaire
+}
+
+/////// soulignement du titre /////////
+.soulignement {
+    margin: 10px auto 30px; //marge du soulignement du titre
+    max-width: 512px;
+    border-top: solid 5px; // taille des bordures
+    border-color: #71a1e1; // couleur de la barre
+}
+/////// fin soulignement du titre /////////
+
+/////// partie du Copyright /////////
+#copy{
+  background-color: #a3c6f5; // couleur du fon du footer
+  height: 150px; // hauteur du footer
+  text-align: center; // alignement du texte du footer
+  letter-spacing: 5px; // permet de faire un ecare entre les lettre d'un text
+  padding: 100px;
+}
+@media (min-width:320px) and (max-width:375px) {
+  #copy p{
+    margin-top: -35%;
+  }
+}
+@media (min-width:375px) and (max-width:425px) {
+  #copy p{
+    margin-top: -20%;
+  }
+}
+@media (min-width:425px) and (max-width:768px) {
+  #copy p{
+    margin-top: -10%;
+  }
+}
+@media (min-width:768px){
+  #copy p{
+    margin-top: 0%;
+  }
+}
+/////// fin de la partie du Copyright /////////
+
+///// taille des texte dans la div partenaire /////​
+#divpartenaire>h2{
+  font-size: $tailleTitre; // taille des titre h2 de la section partenaire
+}h3{
+  font-size: $tailleArticle; // taille des titre h3 de la section partenaire
+}
+#divpartenaire >img{
+  margin : 1em;
+}

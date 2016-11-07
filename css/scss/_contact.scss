@@ -1,0 +1,183 @@
+#contact{
+  margin-left: -1%;
+  text-align: center;
+  font-size:$tailleTitre ;
+  }
+
+.infos{
+    margin-top: 10px;
+  }
+
+.infos a{
+  font-size: 1em;
+}
+.contact {
+
+  padding-top:20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  padding-left: 0;
+
+  }
+
+@media only screen and (max-device-width: 700px) {
+    .contact {
+  flex-direction: column;
+ }
+}
+
+.items {
+  color: black;
+  font-size: 15px;
+ }
+
+.items a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.contactdesactive{
+  display: none;
+}
+@media (min-width:768px){
+  .contactdesactive{
+    display: block;
+  }
+  .contactactive{
+    display: none;
+  }
+}
+@media (min-width:1024px) {
+  .contact{
+    margin-left: -160px;
+  }
+
+}
+@media (max-width:768px) {
+  .contact{
+    display: block;
+  }
+}
+
+
+#sectionContact{
+  padding-top: 60px;
+  li{
+  text-align: center;
+  width: 100%;
+  font-size:$tailleArticle;
+ }
+}
+
+/*// Formulaire ID*/
+#form_contact{
+  text-align: center;
+}
+/*// Messages d'erreur en rouge !*/
+#msg_nom{
+  color: red;
+}
+#msg_sujet{
+  color: red;
+}
+#msg_email{
+  color: red;
+}
+#msg_message{
+  color: red;
+}
+/*// Bouton ENVOYER*/
+#send{
+  color: #222;
+}
+#nom{
+  border-bottom: 2px solid #71a1e1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #e8edfa;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+#email{
+  border-bottom: 2px solid #71a1e1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #e8edfa;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+/*// Messages de vérification qui se placent dans les span du formulaire*/
+#msg_all{
+}
+#msg_alert{
+}
+.message-area{
+  resize: none;
+}
+textarea{
+  background-color: blue;
+  border-radius: 2px;
+  border: 2px solid #71a1e1;
+  resize:none;
+}
+.boutonSend{
+  width: 125px;
+  height: 40px;
+  border: 2px solid green;
+  border-radius: 2px;
+  margin-top: 2%;
+}
+.boutonSend:hover{
+  cursor: pointer;
+  background-color: #71a1e1;
+}
+#send{
+  color: #71a1e1;
+}
+#send:hover{
+  color: #e8edfa;
+}
+.confirmMsg{
+  margin-top: 2%;
+  color: #71a1e1;
+  font-size: 25px;
+}
+.form-marg{
+  margin-top: 4%;
+}
+@media (max-width:768px){
+  textarea{
+    margin-top: -3.5%;
+    width: 75%;
+  }
+  #nom{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #email{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .form-marg{
+    margin-top: 7%;
+  }
+  .confirmMsg{
+    font-size: 20px;
+  }
+}

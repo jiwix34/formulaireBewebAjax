@@ -1,0 +1,110 @@
+#logoMenu{
+  margin-top: -2px;
+  margin-left: 5px;
+  width: 82px;
+  height: 38px;
+}
+
+.navbar{
+  z-index: 1000;
+  height: 70px;
+}
+
+.navbar-nav li a{
+  line-height: 35px;
+}
+
+li a{
+  font-size: 1.5em;
+}
+
+.separationmenu{
+  height: 60px;
+  margin-top: 5px;
+  border-right-width: 3px;
+  border-right-style: solid;
+  -webkit-border-image:
+    -webkit-gradient(linear, 0 0, 100% 0, from($couleurPrincipale), to(rgba(229, 0, 67, 0))) 1 100%;
+  -webkit-border-image:
+    -webkit-linear-gradient(bottom, $couleurPrincipale, rgba(229, 0, 67, 1)) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient(bottom, $couleurPrincipale, rgba(229, 0, 67, 1)) 1 100%;
+  -o-border-image:
+    -o-linear-gradient(bottom, $couleurPrincipale, rgba(229, 0, 67, 1)) 1 100%;
+  border-image:
+    linear-gradient(to bottom, $couleurPrincipale, rgba(229, 0, 67, 1)) 1 100%;
+}
+
+
+.separationmenu:last-child{
+border-right-width: 0;
+
+}
+
+.navbar-default .navbar-nav >li >a{
+  font-family: $fontTitle;
+  color: black;
+}
+
+// .navbar-collapse, .navbar-form {
+//     border-color: transparent;
+//     background-color: #fff;
+//     // margin-top: 15px;
+// }
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+.separationmenu{
+border-right-width: 0;
+  a{
+    text-align: center;
+  }
+
+}
+.navbar-collapse, .navbar-form {
+    border-color: transparent;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.navbar-collapse-cache {
+    display: none;
+
+}
+}
+
+h1{
+  margin: 0;
+}
+
+.affix + section{
+  padding-top: 70px;
+}
+
+/* Partie à récupérer pour la nav */
+.affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .navbar {
+      margin-bottom: 0px;
+  }
+​
+  .affix + section {
+     position: relative;
+     top: 70px;
+  }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      color: $couleurTraitVertical;
+      background-color: transparent;
+   }

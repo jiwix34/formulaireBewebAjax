@@ -1,0 +1,903 @@
+@charset "UTF-8";
+/*---------container-site-----------*/
+#container {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+/*--------fin-container-site-----------*/
+/*--------couleur-----------*/
+/*-------fin-couleur-----------*/
+/*-----------font import----------------*/
+@font-face {
+  font-family: "Coolvetica";
+  /*---------typo pour title----------*/
+  src: url("../fonts/coolvetica rg.ttf"); }
+@font-face {
+  font-family: "GeosansLight";
+  /*---------typo pour texte----------*/
+  src: url("../fonts/GeosansLight.ttf"); }
+/*----------fin-font import----------------*/
+/*--------police-----------*/
+/*-----------taille police Titre--------------*/
+/*-----texte en majuscule------*/
+/*----------taille police Article---------------*/
+/*-------fin police-----------*/
+/*-----CouleurBody-------*/
+body {
+  background-color: #e8edfa; }
+
+#entete {
+  background-image: url("../img/photogroupe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: none;
+  margin-top: -100px; }
+
+.opaque {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4); }
+
+.logo {
+  margin: auto;
+  padding-top: 120px;
+  height: 333px;
+  width: 738px; }
+
+#mouse {
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 12px;
+  padding-left: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid #71a1e1; }
+
+@media (min-width: 768px) {
+  #entete {
+    display: block; } }
+#logoMenu {
+  margin-top: -2px;
+  margin-left: 5px;
+  width: 82px;
+  height: 38px; }
+
+.navbar {
+  z-index: 1000;
+  height: 70px; }
+
+.navbar-nav li a {
+  line-height: 35px; }
+
+li a {
+  font-size: 1.5em; }
+
+.separationmenu {
+  height: 60px;
+  margin-top: 5px;
+  border-right-width: 3px;
+  border-right-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(#71a1e1), to(rgba(229, 0, 67, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(bottom, #71a1e1, #e50043) 1 100%;
+  -moz-border-image: -moz-linear-gradient(bottom, #71a1e1, #e50043) 1 100%;
+  -o-border-image: -o-linear-gradient(bottom, #71a1e1, #e50043) 1 100%;
+  border-image: linear-gradient(to bottom, #71a1e1, #e50043) 1 100%; }
+
+.separationmenu:last-child {
+  border-right-width: 0; }
+
+.navbar-default .navbar-nav > li > a {
+  font-family: "Coolvetica";
+  color: black; }
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+  background-color: transparent; }
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent; }
+
+@media (max-width: 768px) {
+  .separationmenu {
+    border-right-width: 0; }
+    .separationmenu a {
+      text-align: center; }
+
+  .navbar-collapse, .navbar-form {
+    border-color: transparent;
+    background-color: #fff;
+    margin-top: 15px; }
+
+  .navbar-collapse-cache {
+    display: none; } }
+h1 {
+  margin: 0; }
+
+.affix + section {
+  padding-top: 70px; }
+
+/* Partie à récupérer pour la nav */
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+​
+.affix + section {
+  position: relative;
+  top: 70px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #e50043;
+  background-color: transparent; }
+
+#Presentation {
+  font-family: "Coolvetica";
+  background-color: #a3c6f5;
+  height: 980px;
+  padding-top: 60px; }
+  #Presentation h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  #Presentation div {
+    display: flex;
+    justify-content: space-around; }
+    #Presentation div article {
+      margin-top: 105px;
+      text-align: center;
+      font-size: 20px; }
+      #Presentation div article p {
+        font-size: 1.2em; }
+  #Presentation #footerPres {
+    position: relative;
+    bottom: 420px;
+    text-align: center; }
+
+@media (max-width: 992px) {
+  #Presentation {
+    height: auto; }
+    #Presentation div {
+      display: block; }
+      #Presentation div h3 {
+        margin: auto;
+        margin-bottom: 10px; } }
+/**********partie formation**********/
+.titreformation > h2 {
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: "Coolvetica"; }
+
+/******div englobant section formation & langages*****/
+.containerFormaLang {
+  background-color: #e8edfa; }
+
+.texte {
+  font-family: 'GeosansLight';
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%; }
+
+.texte > p {
+  background-color: #a3c6f5;
+  padding: 4%;
+  text-align: justify;
+  box-shadow: -20px 15px 0px #71a1e1;
+  font-size: 1.6em; }
+
+.separation {
+  border-bottom: 1px solid black;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+@media (max-width: 768px) {
+  .texte > p {
+    box-shadow: 0px 0px 0px; } }
+#couleur-langage {
+  background-color: #e8edfa;
+  padding-bottom: 45px;
+  margin-top: -20px; }
+  #couleur-langage header {
+    border-bottom: 3px solid #71a1e1;
+    margin-bottom: 25px;
+    margin-right: 20%;
+    margin-left: 20%; }
+    #couleur-langage header h2 {
+      text-align: center;
+      padding-bottom: 15px;
+      padding-top: 25px;
+      font-size: 2.5em;
+      font-family: "Coolvetica";
+      text-transform: uppercase;
+      margin-left: 20px;
+      font-family: "GeosansLight"; }
+  #couleur-langage #textlang {
+    text-align: justify;
+    font-size: 1.6em;
+    width: 90%;
+    margin: auto; }
+  #couleur-langage div {
+    display: flex;
+    flex-direction: row; }
+    #couleur-langage div h3 {
+      text-align: center;
+      padding-bottom: 40px;
+      color: #444444;
+      font-family: "GeosansLight"; }
+  #couleur-langage article > h3 {
+    font-size: 4em; }
+
+.langages {
+  padding-top: 40px;
+  width: 50%;
+  border-right: 2px solid #a3c6f5;
+  margin-top: 40px; }
+
+div.groupe1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 150px;
+  margin: auto; }
+  div.groupe1 img {
+    width: 65px;
+    height: 65px; }
+
+.outils {
+  width: 50%;
+  padding-top: 40px;
+  margin-top: 40px; }
+
+.framework {
+  border-right: 2px solid #a3c6f5; }
+
+@media (max-width: 768px) {
+  #couleur-langage div {
+    display: flex;
+    flex-direction: column; }
+
+  #couleur-langage div .groupe1 {
+    display: block; }
+
+  .langages {
+    width: 100%; }
+
+  .outils {
+    width: 100%; }
+
+  .framework {
+    width: 100%; } }
+#presse {
+  background-color: rgba(113, 161, 225, 0.5);
+  background-image: url(../img/presse.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+  color: white;
+  font-family: "GeosansLight"; }
+  #presse h2.revue {
+    text-align: center;
+    font-family: "Coolvetica";
+    font-size: 4em;
+    margin-top: 0;
+    padding-top: 15px; }
+  #presse h3.texte-revue {
+    text-align: center;
+    font-size: 1.9em;
+    padding-bottom: 15px; }
+  #presse #imgPresse {
+    display: flex;
+    justify-content: space-around; }
+    #presse #imgPresse div {
+      width: 20%;
+      height: 30%;
+      text-align: center;
+      background-color: #95baee; }
+      #presse #imgPresse div img {
+        width: 75%;
+        /* padding: 15%; */
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 35px; }
+      #presse #imgPresse div p {
+        margin-top: 50px;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.6em;
+        color: white; }
+      #presse #imgPresse div header {
+        display: flex;
+        justify-content: space-around; }
+      #presse #imgPresse div .midi-libre {
+        margin-top: 0%; }
+      #presse #imgPresse div .icone {
+        position: relative;
+        width: 20%;
+        height: 20%;
+        padding: 0px;
+        padding-bottom: 5%; }
+  @media (max-width: 768px) {
+    #presse #imgPresse {
+      display: block; }
+      #presse #imgPresse div {
+        position: relative;
+        top: 20px;
+        left: 12.5%;
+        width: 75%;
+        height: 40%; }
+      #presse #imgPresse .tvsud {
+        margin-bottom: 20px; }
+      #presse #imgPresse .midilibre {
+        margin-bottom: 20px; } }
+
+#sectionPromotion {
+  background-color: #e8edf3;
+  padding-bottom: 5%;
+  padding-top: 60px; }
+
+.titrePromotion {
+  background-color: white; }
+
+.titrePromotion > h2 {
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: "Coolvetica";
+  padding-bottom: 30px;
+  padding-top: 15px; }
+
+#containerPromotion {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 2%;
+  justify-content: space-around;
+  font-family: "GeosansLight";
+  font-size: 1.4em; }
+
+.imglogo {
+  float: right;
+  display: none; }
+
+#profils .descrilogo {
+  width: 55px;
+  padding-right: 15px;
+  margin-top: 65px; }
+
+#profils .lienpf {
+  padding-top: 55px; }
+
+#containerPromotion th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  background-color: #a3c6f5;
+  text-align: center; }
+
+table img {
+  width: 30px; }
+
+#containerPromotion td {
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  background-color: #71a1e1; }
+
+#containerPromotion td a {
+  color: white; }
+
+#liste {
+  width: 430px; }
+
+#profils {
+  overflow: hidden;
+  margin-top: 150px;
+  margin-right: -75px;
+  width: 400px;
+  height: 350px;
+  background-color: #a3c6f5;
+  color: white;
+  box-shadow: -20px 15px 0px #71a1e1;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+ul.logopres {
+  position: absolute;
+  width: 240px;
+  right: 0;
+  bottom: 0; }
+
+.logopres li {
+  list-style-type: none;
+  display: inline; }
+
+#profils h2 {
+  text-align: center;
+  padding-bottom: 20px; }
+
+#profils a:hover {
+  color: white;
+  text-decoration: none; }
+
+#profils div {
+  position: absolute;
+  display: none;
+  height: 350px;
+  width: 380px; }
+
+#profils div[name="fabrice"] {
+  display: block; }
+
+#containerCarouzel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  width: 310px;
+  height: 463px; }
+
+#tablette {
+  position: absolute;
+  z-index: 13;
+  width: 316px;
+  height: 463px; }
+
+.ligneB {
+  border-right: 1px solid white !important; }
+
+#carouzel {
+  width: 4986px;
+  position: relative;
+  left: 0;
+  z-index: 12;
+  transition: left 2s;
+  font-size: 0; }
+
+#carouzel div {
+  display: inline-block;
+  position: relative;
+  z-index: -100;
+  top: 59px;
+  left: 18px;
+  width: 277px;
+  height: 356px;
+  border: 1px solid black; }
+
+#carouzel img {
+  width: 277px;
+  height: 356px; }
+
+/*#carouzel div .tablet{
+  margin-left: 30px;
+  width: 340px;
+}*/
+a:hover {
+  cursor: pointer; }
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 15;
+  top: 47%; }
+
+[name="gauche"] {
+  left: 22px; }
+
+[name="droite"] {
+  right: 25px; }
+
+@media screen and (max-width: 1280px) {
+  #sectionPromotion {
+    background-color: #e8edf3;
+    padding-bottom: 5%;
+    padding-top: 60px; }
+
+  .titrePromotion {
+    background-color: white; }
+
+  .titrePromotion > h2 {
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: "Coolvetica";
+    padding-bottom: 30px;
+    padding-top: 15px; }
+
+  #containerPromotion {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 2%;
+    justify-content: space-around;
+    font-family: "GeosansLight";
+    font-size: 1.4em; }
+
+  .imglogo {
+    float: right; }
+
+  #profils .descrilogo {
+    width: 55px;
+    padding-right: 15px;
+    margin-top: 65px; }
+
+  #profils .lienpf {
+    padding-top: 55px; }
+
+  #containerPromotion th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    background-color: #a3c6f5;
+    text-align: center; }
+
+  table img {
+    width: 30px; }
+
+  #containerPromotion td {
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    background-color: #71a1e1; }
+
+  #containerPromotion td a {
+    color: white; }
+
+  #liste {
+    width: 430px; }
+
+  /* This property hide the add who share the link of portfolio and social network */
+  #profils {
+    display: none; }
+
+  ul.logopres {
+    position: absolute;
+    width: 240px;
+    right: 0;
+    bottom: 0; }
+
+  .logopres li {
+    list-style-type: none;
+    display: inline; }
+
+  #profils h2 {
+    text-align: center;
+    padding-bottom: 20px; }
+
+  #profils a:hover {
+    color: white;
+    text-decoration: none; }
+
+  #profils div {
+    position: absolute;
+    display: none;
+    height: 350px;
+    width: 380px; }
+
+  #profils div[name="fabrice"] {
+    display: block; }
+
+  #containerCarouzel {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    width: 310px;
+    height: 463px; }
+
+  #tablette {
+    position: absolute;
+    z-index: 13;
+    width: 316px;
+    height: 463px; }
+
+  .ligneB {
+    border-right: 1px solid white !important; }
+
+  #carouzel {
+    width: 4986px;
+    position: relative;
+    left: 0;
+    z-index: 12;
+    transition: left 2s;
+    font-size: 0; }
+
+  #carouzel div {
+    display: inline-block;
+    position: relative;
+    z-index: -100;
+    top: 59px;
+    left: 18px;
+    width: 277px;
+    height: 356px;
+    border: 1px solid black; }
+
+  #carouzel img {
+    width: 277px;
+    height: 356px; }
+
+  /*#carouzel div .tablet{
+    margin-left: 30px;
+    width: 340px;
+  }*/
+  a:hover {
+    cursor: pointer; }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 15;
+    top: 47%; }
+
+  [name="gauche"] {
+    left: 22px; }
+
+  [name="droite"] {
+    right: 25px; }
+
+  .imglogo {
+    float: right;
+    display: block; } }
+/*
+    ce code agis quand on passe en version mobile,
+    il cache le caroussel et le panneau d'infos avec les liens des portfolios et des réseaux sociaux.
+*/
+@media screen and (max-width: 834px) {
+  #containerCarouzel {
+    display: none; }
+
+  #liste {
+    width: 100%;
+    font-size: 16px; }
+
+  #containerPromotion {
+    width: 100%;
+    margin: 0px; }
+
+  #containerPromotion {
+    display: block; }
+
+  .imglogo {
+    float: right;
+    display: block; } }
+#contact {
+  margin-left: -1%;
+  text-align: center;
+  font-size: 4em; }
+
+.infos {
+  margin-top: 10px; }
+
+.infos a {
+  font-size: 1em; }
+
+.contact {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  padding-left: 0; }
+
+@media only screen and (max-device-width: 700px) {
+  .contact {
+    flex-direction: column; } }
+.items {
+  color: black;
+  font-size: 15px; }
+
+.items a {
+  font-size: 20px;
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.contactdesactive {
+  display: none; }
+
+@media (min-width: 768px) {
+  .contactdesactive {
+    display: block; }
+
+  .contactactive {
+    display: none; } }
+@media (min-width: 1024px) {
+  .contact {
+    margin-left: -160px; } }
+@media (max-width: 768px) {
+  .contact {
+    display: block; } }
+#sectionContact {
+  padding-top: 60px; }
+  #sectionContact li {
+    text-align: center;
+    width: 100%;
+    font-size: 1.6em; }
+
+/*// Formulaire ID*/
+#form_contact {
+  text-align: center; }
+
+/*// Messages d'erreur en rouge !*/
+#msg_nom {
+  color: red; }
+
+#msg_sujet {
+  color: red; }
+
+#msg_email {
+  color: red; }
+
+#msg_message {
+  color: red; }
+
+/*// Bouton ENVOYER*/
+#send {
+  color: #222; }
+
+#nom {
+  border-bottom: 2px solid #71a1e1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #e8edfa;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+
+#email {
+  border-bottom: 2px solid #71a1e1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #e8edfa;
+  margin-left: 2%;
+  margin-bottom: 2%; }
+
+/*// Messages de vérification qui se placent dans les span du formulaire*/
+.message-area {
+  resize: none; }
+
+textarea {
+  background-color: #e8edfa;
+  border-radius: 2px;
+  border: 2px solid #71a1e1;
+  resize: none; }
+
+.boutonSend {
+  width: 125px;
+  height: 40px;
+  border: 2px solid #71a1e1;
+  border-radius: 2px;
+  margin-top: 2%; }
+
+.boutonSend:hover {
+  cursor: pointer;
+  background-color: #71a1e1; }
+
+#send {
+  color: #71a1e1; }
+
+#send:hover {
+  color: #e8edfa; }
+
+.confirmMsg {
+  margin-top: 2%;
+  color: #71a1e1;
+  font-size: 25px; }
+
+.form-marg {
+  margin-top: 4%; }
+
+@media (max-width: 768px) {
+  textarea {
+    margin-top: -3.5%;
+    width: 75%; }
+
+  #nom {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+
+  #email {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+
+  .form-marg {
+    margin-top: 7%; }
+
+  .confirmMsg {
+    font-size: 20px; } }
+.partenaire {
+  text-align: center; }
+
+.soulignement {
+  margin: 10px auto 30px;
+  max-width: 512px;
+  border-top: solid 5px;
+  border-color: #71a1e1; }
+
+#copy {
+  background-color: #a3c6f5;
+  height: 150px;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 100px; }
+
+@media (min-width: 320px) and (max-width: 375px) {
+  #copy p {
+    margin-top: -35%; } }
+@media (min-width: 375px) and (max-width: 425px) {
+  #copy p {
+    margin-top: -20%; } }
+@media (min-width: 425px) and (max-width: 768px) {
+  #copy p {
+    margin-top: -10%; } }
+@media (min-width: 768px) {
+  #copy p {
+    margin-top: 0%; } }
+#divpartenaire > h2 {
+  font-size: 4em; }
+
+h3 {
+  font-size: 1.6em; }
+
+#divpartenaire > img {
+  margin: 1em; }
+
+#livredor h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: "Coolvetica"; }
+
+.textalign {
+  text-align: center; }
+
+.box {
+  width: 80%;
+  margin: auto;
+  background-color: #a3c6f5;
+  padding: 4%;
+  box-shadow: 20px 15px 0px #71a1e1;
+  text-align: left;
+  font-size: 1.6em;
+  margin-top: 20px; }
+  .box p {
+    width: 80%;
+    margin: auto; }
+
+.signature {
+  display: block;
+  text-align: right;
+  padding-top: 1em;
+  padding-right: 1.5em; }
+
+@media (max-width: 768px) {
+  .box {
+    box-shadow: 0px 0px 0px; } }
+
+/*# sourceMappingURL=main.css.map */

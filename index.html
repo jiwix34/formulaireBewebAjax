@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<META NAME="Copyright" CONTENT="beweb">
+    	<META NAME="Author" CONTENT="beweb">
+      	<META NAME="Category" CONTENT="Webmastering, Gestion de sites">
+        <META NAME="Description" CONTENT="Rôle et description des balises Meta">
+        <META NAME="Keywords" CONTENT="Analyse d'audience, Référencement, PageRank, Webmaster">
+        <META NAME="Reply-to" CONTENT="webmaster@rankspirit.com">
+
+		<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<!-- Import Bootstrap AVANT le fichier css (afin de pouvoir overight) => a tester -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- Import de Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<!-- Import de Bootstrap.js -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="./script/script.js"></script>
+		<script src="./script/smoothscroll.js"></script>
+		<script src="./script/formulaireAjax.js"></script>
+
+                <script  src="./script/scriptPromo.js"></script>
+		<link rel="stylesheet" href="./css/main.css">
+		<title>BeWeb</title>
+	</head>
+
+	<body>
+          <!-- section contact -->
+          <section id="sectionContact">
+
+						<div class="form-marg" id="form_contact">
+						<form action="http://www.jimmy-friedblatt.fr/bewebderniereversion/process.php" id="contactForm" method="POST">
+							<p>
+								<input id="nom" placeholder="Votre nom" name="nom" type="text">
+
+								<input id="email" placeholder="E-mail: vous@exemple.com" name="email" type="email">
+									<br /><span id="msg_nom"></span><span id="msg_email"></span>
+								<input id="objet" placeholder="objet de la demande" name="objet" type="text">
+							</p>
+							<p>
+								<textarea class="message-area" id="message" placeholder="Votre message" name="message" rows="12" cols="68"></textarea>
+									<br /><span id="msg_message"></span>
+							</p>
+							<p>
+								<input class="boutonSend" id="send" type="submit" value="Envoyer"/>
+							</p>
+					</form>
+				<span id="msg_all"></span>
+					<p class="confirmMsg" id="confirm"></p>
+			</div>
+		</div>
+<!-- Fin du formulaire -->
+
+          </section>
+
+              </body>
+              </html>

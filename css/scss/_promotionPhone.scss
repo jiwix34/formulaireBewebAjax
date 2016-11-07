@@ -1,0 +1,30 @@
+/*
+    ce code agis quand on passe en version mobile,
+    il cache le caroussel et le panneau d'infos avec les liens des portfolios et des réseaux sociaux.
+*/
+@media screen and (max-width: 834px) {
+    #containerCarouzel{
+        display: none;
+    }
+
+    #liste{
+        width: 100%;
+		font-size: 16px;
+
+    }
+
+    #containerPromotion{
+        width: 100%;
+        margin:0px;
+
+    }
+
+    #containerPromotion{
+        display: block;
+    }
+    
+    .imglogo {
+  float: right;
+      display: block;
+}
+}

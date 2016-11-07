@@ -1,0 +1,40 @@
+#entete{
+  background-image: url("../img/photogroupe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: none;
+  margin-top:-100px;
+
+}
+
+.opaque{
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+  margin: auto;
+  padding-top: 120px;
+  height: 333px;
+  width: 738px;
+}
+
+#mouse{
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 12px;
+  padding-left: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid $couleurPrincipale;
+}
+
+@media (min-width: 768px){
+  #entete{
+    display: block;
+  }
+}

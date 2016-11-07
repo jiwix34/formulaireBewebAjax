@@ -1,0 +1,190 @@
+#sectionPromotion{
+  background-color: #e8edf3;
+  padding-bottom: 5%;
+  padding-top: 60px;
+}
+
+.titrePromotion{
+  background-color: white;
+}
+
+.titrePromotion>h2{
+text-align: center;
+font-size: $tailleTitre;
+text-transform: $maj;
+font-family:$fontTitle;
+padding-bottom: 30px;
+padding-top: 15px;
+}
+
+#containerPromotion{
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 2%;
+  justify-content: space-around;
+  font-family: $fontTexte;
+  font-size: 1.4em;
+}
+
+.imglogo {
+  float: right;
+      display: none;
+}
+
+#profils .descrilogo {
+  width: 55px;
+  padding-right: 15px;
+  margin-top: 65px;
+}
+
+#profils .lienpf {
+  padding-top: 55px;
+}
+
+#containerPromotion th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  background-color: $couleurSecondaire;
+  text-align: center;
+}
+
+table img{
+  width: 30px;
+}
+
+#containerPromotion td {
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  background-color: $couleurPrincipale;
+}
+
+#containerPromotion td a{
+  color: white;
+}
+
+#liste {
+  width: 430px;
+}
+
+#profils{
+	overflow: hidden;
+  margin-top: 150px;
+  margin-right: -75px;
+  width: $largeurProfils;
+  height: $hauteurProfils;
+  //margin-left: 3%;
+  background-color: $couleurSecondaire;
+  color: white;
+  box-shadow: -20px 15px 0px $couleurPrincipale;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul.logopres{
+  position: absolute;
+  width: 240px;
+  right: 0;
+  bottom: 0;
+}
+
+.logopres li{
+list-style-type: none;
+display: inline;
+}
+
+#profils h2{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#profils a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+#profils div{
+	position: absolute;
+	display: none;
+  height: $hauteurProfils;
+  width: 380px;
+
+}
+
+#profils div[name="fabrice"]{
+	display: block;
+}
+
+#containerCarouzel{
+  position: relative;
+	overflow: hidden;
+  margin-top: 50px;
+	width: 310px;
+	height: 463px;
+  //margin-left: 5%;
+}
+
+#tablette{
+	position: absolute;
+	z-index: 13;
+	width: 316px;
+	height: 463px;
+}
+
+.ligneB {
+  border-right: 1px solid white !important;
+}
+
+#carouzel{
+  width : 4986px; //(18 * 277) /*7200px; //(18 * 400px)*/
+	position: relative;
+	left:0;
+	z-index:12;
+	transition:left 2s;
+  font-size: 0; // pour virer l'espace entre les deux div
+}
+
+#carouzel div{
+  display: inline-block;
+	position: relative;
+	z-index: -100;
+	top: 59px;
+	left: 18px;
+	//font-size: 40px; //pour verifier le bon foctionnement a supprimer au deploiement
+	width: 277px;
+	height: 356px;
+	border: 1px solid black;
+}
+
+#carouzel img{
+	width: 277px;
+	height: 356px;
+}
+
+/*#carouzel div .tablet{
+  margin-left: 30px;
+  width: 340px;
+}*/
+
+a:hover{
+  cursor: pointer;
+}
+
+.arrow{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+	z-index:15;
+  top: 47%;
+}
+[name="gauche"]{
+  left: 22px;
+}
+[name="droite"]{
+  right: 25px;
+}

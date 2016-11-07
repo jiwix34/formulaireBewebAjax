@@ -1,0 +1,51 @@
+/*---------container-site-----------*/
+
+#container{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+/*--------fin-container-site-----------*/
+
+/*--------couleur-----------*/
+$couleurPrincipale : #71a1e1;
+$couleurSecondaire : #a3c6f5;
+$couleurBackground : #e8edfa;
+$couleurTraitVertical : #e50043;
+$couleurTexte : #444444;
+$couleurRubrique : white;
+$largeurProfils : 400px;
+$hauteurProfils : 350px;
+
+
+/*-------fin-couleur-----------*/
+
+/*-----------font import----------------*/
+@font-face {
+  font-family: "Coolvetica";
+  /*---------typo pour title----------*/
+  src: url("../fonts/coolvetica rg.ttf"); }
+@font-face {
+  font-family: "GeosansLight";
+  /*---------typo pour texte----------*/
+  src: url("../fonts/GeosansLight.ttf"); }
+/*----------fin-font import----------------*/
+
+/*--------police-----------*/
+$fontTitle : "Coolvetica";
+$fontTexte : "GeosansLight";
+
+/*-----------taille police Titre--------------*/
+$tailleTitre : 4em;
+/*-----texte en majuscule------*/
+$maj : uppercase;
+
+/*----------taille police Article---------------*/
+$tailleArticle : 1.6em;
+/*-------fin police-----------*/
+
+/*-----CouleurBody-------*/
+body{
+  background-color:$couleurBackground;
+}
